@@ -232,20 +232,8 @@ main {
 	background-size: cover;
 }
 
-.demo-1 .content--fixed {
-	background-image: url(../img/bg1.jpg);
-}
-
-.demo-2 .content--fixed {
-	background-image: url(../img/bg2.jpg);
-}
-
-.demo-3 .content--fixed {
-	background-image: url(../img/bg3.jpg);
-}
-
 .demo-4 .content--fixed {
-	background-image: url(../img/bg4.jpg);
+	background: #c3c3c3;
 }
 
 .content__inner {
@@ -384,18 +372,34 @@ main {
 	color: var(--color-menu-item-hover);
 }
 
-.next-demo {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 1.5em 2em;
-	font-weight: bold;
-	color: var(--color-next);
+/* My changes - Ritika*/
+.header_content{
+	height: 20%;
+	background: #22b14c;
+	top: 0px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size:9vw;
 }
 
-.next-demo:hover,
-.next-demo:focus {
-	color: var(--color-next-hover);
+.body_content_left{
+	width: 50%; 
+	float:left;
+}
+
+.body_content_right{
+	width: 50%; 
+	float:right;
+}
+
+.seperator {
+  height: 60%;
+  width: 2px;
+  background: #505050;
+  position: absolute;
+  left: 50%;
+  top: 30%;
 }
 
 @media screen and (max-width: 50em) {
@@ -418,12 +422,6 @@ main {
 		padding-bottom: 0.25em;
 		text-align: center;
 	}
-	.github {
-		display: none;
-	}
-	.codrops-links {
-		margin: 0;
-	}
 	.content--intro .content__inner,
 	.demo-4 .content__inner {
 		padding-top: 12em;
@@ -443,7 +441,5 @@ main {
 		padding: 1em;
 		font-size: 1em;
 	}
-	.next-demo {
-		position: relative;
-	}
 }
+
